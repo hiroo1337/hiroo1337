@@ -1,13 +1,51 @@
+```py
+
+from abc import ABC, abstractmethod
+
+
+class Hiro(ABC):
+
+    @abstractmethod
+    def get_contact():
+        pass
+
+    @abstractmethod
+    def get_languages():
+        pass
+
+    @abstractmethod
+    def get_coding_skills():
+        pass
+
+
+class Profile(Hiro):
+
+    @staticmethod
+    def get_contact():
+        return "https://discord.gg/boosts-universes"
+
+    @staticmethod
+    def get_languages() -> tuple:
+        supported_languages = ("English",)
+        return supported_languages
+
+    @staticmethod
+    def get_coding_skills() -> tuple:
+        preferred_editor = "vscode"
+        expertise_areas = ["automation", "learning"]
+        programming_languages = {"expert": "python"}
+        return programming_languages, expertise_areas, preferred_editor
+
+```
+
 <h1 align="center">Hi 👋, I'm hiro</h1>
 <h3 align="center">A passionate frontend developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hiroo1337&label=Profile%20views&color=0e75b6&style=flat" alt="hiroo1337" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=hiroo1337" alt="hiroo1337" /></a> </p>
+- Currently learning **Python and Java**
 
-- 🌱 Currently learning **Python and Java**
-
-- 📫 How to reach me **hirosimha**
+- How to reach me?: discord: **hirosimha**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -22,3 +60,4 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hiroo1337&show_icons=true&locale=en" alt="hiroo1337" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=hiroo1337&" alt="hiroo1337" /></p>
+
